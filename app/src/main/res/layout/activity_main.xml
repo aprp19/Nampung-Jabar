@@ -12,6 +12,32 @@
         android:layout_height="wrap_content"
         />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/toolbar_main"
+        android:layout_margin="16dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_container"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            />
+
+        <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+            android:id="@+id/vp_dotsIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:dotsColor="@android:color/holo_green_light"
+            app:selectedDotColor="@android:color/holo_green_dark"
+            app:dotsSize="15dp"
+            app:dotsSpacing="5dp"
+            app:progressMode="true"/>
+    </LinearLayout>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/tb_bottomnav"
         android:layout_width="match_parent"

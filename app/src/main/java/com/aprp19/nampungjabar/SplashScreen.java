@@ -29,10 +29,10 @@ public class SplashScreen extends AppCompatActivity {
         //Ini buat splashscreennya
         new Handler(Looper.getMainLooper()).postDelayed((Runnable)(new Runnable() {
             public final void run() {
-                Intent intent = new Intent((Context)SplashScreen.this, MainActivity.class);
+                Intent intent = new Intent((Context)SplashScreen.this, MainActivity.class); //ini buat pindah activitynya
                 SplashScreen.this.startActivity(intent);
                 SplashScreen.this.finish();
             }
-        }), 3000L);
+        }), 3000L);//Ini delay waktu splashscreen
     }
 }

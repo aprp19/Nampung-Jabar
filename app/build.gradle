@@ -39,4 +39,5 @@ dependencies {
 
     //Addon
     implementation 'com.tbuonomo:dotsindicator:4.3' //Buat indikator Dots
+//    implementation 'com.github.mancj:MaterialSearchBar:0.8.X'
 }

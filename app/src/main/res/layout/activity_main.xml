@@ -12,31 +12,14 @@
         android:layout_height="wrap_content"
         />
 
-    <LinearLayout
+    <FrameLayout
+        android:id="@+id/fg_content"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
+        android:layout_height="0dp"
         android:layout_below="@+id/toolbar_main"
-        android:layout_margin="16dp">
+        android:layout_above="@+id/tb_bottomnav">
 
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/vp_container"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            />
-
-        <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
-            android:id="@+id/vp_dotsIndicator"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            app:dotsColor="@android:color/holo_green_light"
-            app:selectedDotColor="@android:color/holo_green_dark"
-            app:dotsSize="15dp"
-            app:dotsSpacing="5dp"
-            app:progressMode="true"/>
-    </LinearLayout>
+    </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/tb_bottomnav"
